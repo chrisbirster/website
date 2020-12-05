@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chris Birster</title>
+    <link>https://chrisbirster.com/</link>
+    <description></description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chrisbirster.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Abouts</title>
+      <link>https://chrisbirster.com/about/index.xml</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisbirster.com/about/index.xml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogs</title>
+      <link>https://chrisbirster.com/blog/index.xml</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisbirster.com/blog/index.xml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rusts</title>
+      <link>https://chrisbirster.com/rust/index.xml</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chrisbirster.com/rust/index.xml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

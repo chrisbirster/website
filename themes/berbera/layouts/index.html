@@ -1,0 +1,70 @@
+{{ define "main" }}
+<main>
+    <div class="homepage">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>
+                    <span class="minor_line">Ramblings from Chris</span>
+                    <br>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 blurb">
+                <p> Notes to future Chris, my older and wiser self ...and anyone else who finds this useful.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" id="machine_learning">
+            <div class="col-sm-12">
+                <h3 class="category_header">Rust</h3>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <h4 class="card-header">Basics</h4>
+                        <div class="card-body">
+                            <ul>
+                                {{ range (where .Pages "File.Dir" "in" "/rust/basics/").ByTitle }}
+                                <li>
+                                    <a href="{{.Permalink}}">{{.Title}}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row" id="articles">
+            <div class="col-sm-12">
+                <h3 class="category_header">Blog<!-- <a style="float: right;" href="{{ .Site.BaseURL }}/articles/index.xml">RSS</a>-->
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="article_list card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/blog/") }}
+                            <li>
+                                <!-- {{ .PublishDate.Format "Jan 2006" }} -->
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+{{ end }}
